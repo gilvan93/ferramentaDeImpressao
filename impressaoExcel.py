@@ -2,7 +2,7 @@ import os
 import win32com.client
 
 # Caminho da pasta com os arquivos Excel
-pasta_excel = r'G:\Gilvan\2025\relatorios\Junho\Eric'
+pasta_excel = r'G:\Gilvan\2025\relatorios\Julho\Juliana'
 
 # Inicializa o Excel
 excel = win32com.client.Dispatch("Excel.Application")
