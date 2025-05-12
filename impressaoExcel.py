@@ -31,3 +31,5 @@ for arquivo in os.listdir(pasta_excel):
 # Encerra o Excel
 excel.Quit()
 print("Todos os arquivos foram enviados para impressão.")
+
+#testes feitos
