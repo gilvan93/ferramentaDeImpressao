@@ -1,8 +1,19 @@
 import os
 import win32com.client
+import tkinter as tk
+from tkinter import filedialog, messagebox
+
+root = tk.Tk()
+root.withdraw()
+
+pasta_excel = filedialog.askdirectory(title='Selecione a pasta de excel')
+
+if not pasta_excel:
+    messagebox.showinfo("aviso", "nenhuma pasta de excel selecionada.")
+    exit()
 
 # Caminho da pasta com os arquivos Excel
-pasta_excel = r'G:\Gilvan\2025\relatorios\Julho\Juliana'
+#pasta_excel = r'G:\Gilvan\2025\relatorios\Julho\Juliana'
 
 # Inicializa o Excel
 excel = win32com.client.Dispatch("Excel.Application")
